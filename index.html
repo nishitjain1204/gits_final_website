@@ -4,8 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:300,400,700" rel="stylesheet">
+
+   <!-- fonts  -->
+   <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<!-- fonts end -->
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
 
@@ -14,9 +22,29 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"> -->
     
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"> -->
+
+    <!-- text shuffle -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+  <script type="text/javascript" src="jquery.charCycle.0.0.1.js"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('.jitter').mouseenter(function() {
+        if ($(this).hasClass('cycling') == false) {
+          $(this).charcycle({
+            'target': '#text'
+          });
+        }
+      });
+    });
+  </script>
+  <!-- text shuffle ends -->
 
     <title>Website Menu #3</title>
   </head>
@@ -38,7 +66,7 @@
         <div class="row align-items-center">
           
           <div class="col-11 col-xl-2">
-            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">GITS</a></h1>
+            <h1 class="mb-0 site-logo"><a href="index.html" class="text-white mb-0">G<span style="color:#ff5722;">IT</span>S</a></h1>
           </div>
           <div class="col-12 col-md-10 d-none d-xl-block">
             <nav class="site-navigation position-relative text-right" role="navigation">
@@ -48,6 +76,8 @@
                 <li class=""><a href="#aboutus"><span>About Us</span></a></li>
                 <li class=""><a href="#contactus"><span>Contact Us</span></a></li>
               </ul>
+              
+
             </nav>
           </div>
 
@@ -62,11 +92,15 @@
     </header>
 
     
+<div class="container-type">
+       <div class = "hero-text"><h1>GROUP OF<br><span class="shuffleText" style="font-size: 4rem; font-family: 'Ubuntu Mono', monospace; color:#ff5722;">INFORMATION TECHNOLOGY</span><br>STUDENTS.<br><br>We<br><span class="txt-type" data-wait="3000" data-words='["Develop", "Interact", "Organise"]'></span></h1></div>
+       <!-- <div class = "hero-text"><h1>GROUP OF <span class="txt-type" data-wait="3000" data-words='["Developer", "Designer", "Creator"]'></span> STUDENTS</h1></div> -->
 
-       <div class = "hero-text"><h1>GROUP OF INFORMATION TECHNOLOGY STUDENTS</h1></div>
-
+      </div>
        <div class = "about-us" id="aboutus">
-         <h2>About Us</h2>
+        <!-- <legend class="col-form-label col-sm-2 pt-0 center"><h2>About Us</h2></legend>
+        <br> -->
+        <h2 style="color:#ff5722;">About Us</h2>
          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
           Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
@@ -74,15 +108,13 @@
 
        <div class = "team" id="team">
 
-        <h2>Our Team</h2>
-
-      <div>
-        
-      
+        <!-- <legend class="col-form-label col-sm-2 pt-0"><h2>Our Team</h2></legend> -->
+        <h2 style="color:#ff5722;">Our Team</h2>
+      <div class="row equal">
        <div class="card" style="width: 16rem; background: transparent; color: white ;">
           <img class="card-img-top" src='images/committee/shree.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>General Secretary</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">General Secretary</b></h4>
             <h5 class="card-title">Shrihari Wayal</h5>
           </div>
         </div>
@@ -91,7 +123,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/rupali.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Co General Secretary</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Co General Secretary</b></h4>
             <h5 class="card-title">Rupali Sarak</h5>
           </div>
       </div>
@@ -105,7 +137,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/amaan.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Convenor</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Convenor</b></h4>
             <h5 class="card-title">Amaan Syed</h5>
           </div>
           </div>
@@ -114,7 +146,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/komal.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Co Convenor</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Co Convenor</b></h4>
             <h5 class="card-title">Komal Mhatre</h5>
           </div>
       </div>
@@ -125,18 +157,19 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/shloka.jpg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Convenor</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Convenor</b></h4>
             <h5 class="card-title">Shloka Gupta</h5>
           </div>
       </div>
     </div>
     </div>
       <div>
+        
         <div>
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/vrushabbhuse.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Sponsorship Head</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Sponsorship Head</b></h4>
             <h5 class="card-title">Vrushabh Bhuse</h5>
           </div>
       </div>
@@ -145,7 +178,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/shrenik.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Co Sponsorship Head</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Co Sponsorship Head</b></h4>
             <h5 class="card-title">Shrenik Karmorkar</h5>
           </div>
       </div>
@@ -157,7 +190,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/nishit.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Technical Team</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Technical Team</b></h4>
             <h5 class="card-title">Nishit Jain</h5>
           </div>
       </div>
@@ -167,7 +200,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/akansha.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Technical Team</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Technical Team</b></h4>
             <h5 class="card-title">Akanksha Gutal</h5>
           </div>
         </div>
@@ -176,7 +209,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/akshaychopade.jpg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Technical Team</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Technical Team</b></h4>
             <h5 class="card-title">Akshay Chopade</h5>
           </div>
       </div>
@@ -190,7 +223,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/ketki.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Lady Representative</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Lady Representative</b></h4>
             <h5 class="card-title">Ketki Ghadge</h5>
           </div>
       </div>
@@ -200,7 +233,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/sushank.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Publicity & Design </b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Publicity & Design </b></h4>
             <h5 class="card-title">Sushank Hole</h5>
           </div>
       </div>
@@ -209,7 +242,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/durgesss.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Publicity & Design</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Publicity & Design</b></h4>
             <h5 class="card-title">Durgesh Dubey</h5>
           </div>
       </div>
@@ -222,7 +255,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/priyal.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Cultural Head</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Cultural Head</b></h4>
             <h5 class="card-title">Priyal Patel</h5>
           </div>
       </div>
@@ -232,7 +265,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/diksha.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Co Cultural Head</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Co Cultural Head</b></h4>
             <h5 class="card-title">Diksha Sah</h5>
           </div>
       </div>
@@ -242,7 +275,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/dhanashree.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Treasurer</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Treasurer</b></h4>
             <h5 class="card-title">Dhanashree Kittur</h5>
           </div>
       </div>
@@ -255,7 +288,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/vishalw.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Alumni Cell</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Alumni Cell</b></h4>
             <h5 class="card-title">Vishal Waghmode</h5>
           </div>
       </div>
@@ -265,7 +298,7 @@
        <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/abhang.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Alumni Cell</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Alumni Cell</b></h4>
             <h5 class="card-title">Abhang Naykodi</h5>
           </div>
       </div>
@@ -276,7 +309,7 @@
       <div class="card" style="width: 16rem; background: transparent; color: white;">
           <img class="card-img-top" src='images/committee/rana.jpeg' alt="Shree Wayal">
           <div class="card-body">
-            <h4 class="card-title"><b>Alumni Cell</b></h4>
+            <h4 class="card-title"><b style="color:#ff5722;">Alumni Cell</b></h4>
             <h5 class="card-title">Sameer Rana</h5>
           </div>
       </div>  
@@ -290,6 +323,8 @@
  
 
     </div>
+
+    <hr>
 
     <div class="footer-basic" id="contactus">
         <footer>
@@ -305,6 +340,7 @@
 
 
     <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/shuffleText.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.sticky.js"></script>
