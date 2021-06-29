@@ -432,6 +432,7 @@ a {
   line-height:40px;
   display:inline-block;
   text-align:center;
+  text-decoration-color:white ;
   border-radius:50%;
   border:1px solid #ccc;
   margin:0 8px;
